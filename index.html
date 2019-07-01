@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Drum Machine jQuery</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="main">
+  <div id="drum-machine">
+        <h1>Drum Machine 2019</h1>
+        <div id="drum-cont">
+        <div id="drum-grid">
+         <button class="drum-pad" id="Heater_1" type="button">Q<audio class="clip" id="Q" />
+         </button>
+         <button class="drum-pad" id="Heater_2" type="button">W<audio class="clip" id="W" />
+         </button>
+         <button class="drum-pad" id="Heater_3" type="button">E<audio class="clip" id="E" />
+         </button>
+          <button class="drum-pad" id="Heater_4" type="button">A<audio class="clip" id="A" />
+         </button>
+         <button class="drum-pad" id="Clap" type="button">S<audio class="clip" id="S" />
+         </button>
+         <button class="drum-pad" id="Open_HH" type="button">D<audio class="clip" id="D" />
+         </button>
+          <button class="drum-pad" id="Kick_'n_Hat" type="button">Z<audio class="clip" id="Z" />
+         </button>
+         <button class="drum-pad" id="Kick" type="button">X<audio class="clip" id="X" />
+         </button>
+         <button class="drum-pad" id="Closed_HH" type="button">C<audio class="clip" id="C" />
+         </button>
+      </div>
+        </div>
+        <div id="controls">
+          <div id="settings">
+            <div id="power-cont">
+              <h2 id="power-title">Power</h2>
+              <div id="power-toggle">
+                <button id="power">
+                  <i class="fas fa-power-off"></i>
+                </button>
+              </div>
+            </div>
+            <div id="bank-cont">
+              <h2 id="bank-title">Bank</h2>
+              <div id="bank-toggle">
+                <button id="bank1">A</button>
+                <button id="bank2">B</button>
+              </div>
+            </div>
+            <h2 id="vol-display">Volume:</h2>
+            <input id="vol-slider" type="range" min="0" max="100" step="1" defaultValue="50"/>
+          </div>
+           <p id="display"></p>
+        </div>
+      </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+  
+
+    <script  src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>

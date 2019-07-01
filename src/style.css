@@ -1,0 +1,147 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#drum-machine {
+  width: 630px;
+  text-align: center;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  background-color: white;
+}
+
+h1 {
+  font-size: 25px;
+  padding: 0;
+  margin: 5px;
+  text-align: left;
+}
+
+#drum-cont {
+  display: inline-block;
+  margin: 5px 50px 5px 5px;
+}
+
+#drum-grid {
+  margin: auto 0;
+  width: 305px;
+  display: grid;
+  grid-template-columns: 95px 95px 95px;
+  grid-template-rows: 95px 95px 95px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.drum-pad {
+  border-radius: 10px;
+  font-size: 30px;
+  box-shadow: 4px 2px rgba(0,0,0,0.5);
+  
+}
+
+.drum-pad:active {
+  box-shadow: inset 4px 2px rgba(0,0,0,0.5), inset -2px -1px rgba(0,0,0,0.5);
+}
+
+.drum-pad:focus{
+  outline: 0;  
+}
+
+.drum-pad:disabled{
+  background-color: white;
+}
+
+#controls {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 250px;
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  /*border-color: green;
+  border-width: 5px;
+  border-style: solid;*/
+}
+
+#display {
+  box-sizing: border-box;
+  min-height: 30px;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border-color: grey;
+  border-width: 3px;
+  border-style: inset;
+}
+
+#vol-display {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+#vol-slider {
+  margin-top: 8px;
+}
+
+#settings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+h2 {
+  margin: 5px 0px;
+  font-size: 20px;
+}
+
+#power-title {
+  text-align: left;
+}
+
+#bank-title {
+  text-align: center;
+}
+
+#power-toggle {
+  text-align: left;
+}
+
+#power {
+  height: 53px;
+  width: 53px;
+  font-size: 30px;
+  background-color: white;
+  border-color: black;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+#bank-toggle {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bank1,
+#bank2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+}
