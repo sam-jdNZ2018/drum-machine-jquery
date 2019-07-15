@@ -1,4 +1,4 @@
-# JQuery WDrum Machine
+# JQuery Drum Machine
 
 Viewable at [this link](https://sam-jdnz2018.github.io/drum-machine-jquery/)
 
